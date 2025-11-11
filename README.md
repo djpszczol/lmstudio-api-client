@@ -31,26 +31,30 @@ A beautiful, feature-rich command-line interface for interacting with LM Studio'
 
 ## 🚀 Installation
 
-1. **Clone or navigate to the directory:**
+1. **Clone the repository:**
 ```bash
+git clone https://github.com/djpszczol/lmstudio-api-client.git
 cd lmstudio-api-client
 ```
 
-2. **Install dependencies (already done - using virtual environment):**
+2. **Make the script executable:**
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+chmod +x lm.sh
 ```
 
-3. **Run using the wrapper script:**
+3. **Run the client:**
 ```bash
 ./lm.sh
 ```
 
+The first time you run `lm.sh`, it will automatically:
+- Create a virtual environment
+- Install all required dependencies
+- Launch the CLI
+
 4. **Optional: Create an alias (add to your ~/.zshrc or ~/.bashrc):**
 ```bash
-alias lm='/Users/marekratajczak/lmstudio-api-client/lm.sh'
+alias lm='~/lmstudio-api-client/lm.sh'
 ```
 
 Then you can use just `lm` from anywhere!
